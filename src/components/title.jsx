@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Title() {
+function Home() {
   return (
     <section id="title">
     <div className="container-fluid bg-info title-container-fluid">
@@ -37,4 +37,4 @@ function Title() {
   )
 }
 
-export default Title;
+export default Home;

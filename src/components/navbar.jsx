@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg  bg-white sticky-top ">
@@ -10,9 +10,9 @@ function Navbar() {
         alt=""
         width="3%"
       />{" "}
-      <a className="navbar-brand fw-bold   " href="#">
+      <Link className="navbar-brand fw-bold   " to={"#"}>
         T.Mobiles{" "}
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -26,47 +26,47 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav  ms-auto mx-5 fw-bold  ">
-          <a className="nav-link  " aria-current="page" href="#title">
+          <Link className="nav-link  " aria-current="page" to={"/"}>
             Home
-          </a>
-          <a className="nav-link   " href="#services">
+          </Link>
+          <Link className="nav-link   " to={"/Service"}>
             Service
-          </a>
-          <a className="nav-link   " href="#features">
+          </Link>
+          <Link className="nav-link   " to={"/Feature"}>
             Feature
-          </a>
-          <a className="nav-link   " href="#pricing">
+          </Link>
+          <Link className="nav-link   " to={"/Pricing"}>
             Price
-          </a>
-          <a className="nav-link   " href="#FAQ">
+          </Link>
+          <Link className="nav-link   " to={"/Faq"}>
             FAQ
-          </a>
-          <li className="nav-item dropdown     ">
-            <a
+          </Link>
+          <li className="nav-item dropdown  ">
+            <Link
               className="nav-link text-dark dropdown-toggle me-5 "
-              href="#"
+              to={"#"}
               data-bs-toggle="dropdown"
               aria-expanded="false"
               role="button"
             >
               Pages
-            </a>
+            </Link>
             <ul className="dropdown-menu">
               <li>
-                <a
+                <Link
                   className="dropdown-item fw-bold nav-link text-dark"
-                  href="#"
+                  to={"#"}
                 >
                   Generic
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="dropdown-item fw-bold nav-link text-dark"
-                  href="#"
+                  to={"#"}
                 >
                   Elements
-                </a>
+                </Link>
               </li>
             </ul>
           </li>

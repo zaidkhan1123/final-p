@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <section id="download" className="">
+    {/* <section id="download" className="">
     <div className="container">
       <div className="row">
         <div className="col-12">
@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   <footer className="footer-area section-gap  ">
     <div className="container">
       <div className="row">
